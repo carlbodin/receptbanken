@@ -1,5 +1,7 @@
 body {
-    font-family: Times, 'Times New Roman', serif;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
     background-color: hsl(352, 19%, 85%);
     color: #231308;
     margin: 0;
