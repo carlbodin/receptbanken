@@ -5,94 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
     <!-- theme-color below refers to the top notification bar on mobile-->
     <!-- <meta name="theme-color" content="#000000"> -->
+    <link rel="stylesheet" href="assets/style/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap">
     <!-- <link rel="icon" href="assets/images/cb-favicon-32x32.png" type="image/png"> -->
     <title>Recept</title>
 </head>
-<style>
-    /* Global Styles */
-    body {
-      /* font-family: Arial, sans-serif; */
-      font-family: 'Roboto', sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-      justify-content: center;
-      color: #333;
-    }
-    
-    header{
-        width: 100%;
-        height: 0px;
-        top: 0px;
-        left: 0px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    /* Recipe Grid Styles */
-    .recipe-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 1200px;
-      min-width: 620px;
-      margin: 100px auto;
-    }
-
-    /* Card Styles */
-    .recipe-card {
-      background-color: #ffffff;
-      position: relative;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      opacity: 0;
-      animation: fadeInSlideDown 0.6s forwards;
-      transition: top 0.4s ease, box-shadow 0.2s ease;
-    }
-
-    .recipe-card:hover {
-      top: -3px;
-      box-shadow: 0 9px 16px rgba(0, 0, 0, 0.15);
-    }
-
-    .recipe-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .recipe-content {
-      padding: 15px;
-    }
-
-    .recipe-title {
-      font-size: 1.2em;
-      margin: 0 0 10px;
-      color: #333;
-    }
-
-    .recipe-description {
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    /* Animation */
-    @keyframes fadeInSlideDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-60px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-</style>
 <body>
 
     <header></header>
