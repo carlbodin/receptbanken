@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <!-- theme-color below refers to the top notification bar on mobile-->
+    <!-- <meta name="theme-color" content="#000000"> -->
+
+    <!-- <link rel="stylesheet" href="assets/style/index.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap">
+    <!-- <link rel="icon" href="assets/images/cb-favicon-32x32.png" type="image/png"> -->
+    <title>Recipes</title>
+</head>
+<style>
+    /* Global Styles */
+    body {
+      /* font-family: Arial, sans-serif; */
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+      justify-content: center;
+      color: #333;
+    }
+    
+    header{
+        width: 100%;
+        height: 0px;
+        top: 0px;
+        left: 0px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Recipe Grid Styles */
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 1200px;
+      min-width: 620px;
+      margin: 100px auto;
+    }
+
+    /* Card Styles */
+    .recipe-card {
+      background-color: #ffffff;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeInSlideDown 0.6s forwards;
+      transition: top 0.4s ease, box-shadow 0.2s ease;
+    }
+
+    .recipe-card:hover {
+      top: -3px;
+      box-shadow: 0 9px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .recipe-content {
+      padding: 15px;
+    }
+
+    .recipe-title {
+      font-size: 1.2em;
+      margin: 0 0 10px;
+      color: #333;
+    }
+
+    .recipe-description {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Animation */
+    @keyframes fadeInSlideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-60px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+</style>
+<body>
+
+    <header></header>
+
+    <div class="recipe-grid">
+
+        <!-- Recipe Card 1 -->
+        <div class="recipe-card" onclick="window.location.href='C:/Users/carl/git/madde-html/bolognese.html'">
+            <img src="https://www.zeta.nu/app/uploads/auto-cropped/2016/07/Spaghetti_pronto_bolognese_st-1024x683.jpg" alt="Recipe 1">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Spaghetti Bolognese</h2>
+                <p class="recipe-description">A classic Italian pasta dish made with a savory meat sauce.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 2 -->
+        <div class="recipe-card" onclick="window.location.href='C:/Users/carl/git/madde-html/salad.html'">
+            <img src="https://greenstar.coop/wp-content/uploads/2023/07/NCG_Dennis_Becker_Classic_Caesar_Salad_715_x_477.jpg" alt="Recipe 2">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Chicken Caesar Salad</h2>
+                <p class="recipe-description">Crispy romaine lettuce with grilled chicken, croutons, and Caesar dressing.</p>
+            </div>
+        </div>
+
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg" alt="Recipe 3">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Chocolate Chip Cookies</h2>
+                <p class="recipe-description">Delicious, chewy cookies loaded with chocolate chips.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://whatsgabycooking.com/wp-content/uploads/2023/01/Master.jpg" alt="Recipe 4">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Avocado Toast</h2>
+                <p class="recipe-description">A simple and healthy toast topped with creamy avocado.</p>
+            </div>
+        </div>
+
+        <!-- Additional cards can be added here -->
+        <!-- Recipe Card 3 -->
+        <!-- Recipe Card 1 -->
+        <div class="recipe-card" onclick="window.location.href='C:/Users/carl/git/madde-html/bolognese.html'">
+            <img src="https://www.zeta.nu/app/uploads/auto-cropped/2016/07/Spaghetti_pronto_bolognese_st-1024x683.jpg" alt="Recipe 1">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Spaghetti Bolognese</h2>
+                <p class="recipe-description">A classic Italian pasta dish made with a savory meat sauce.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 2 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://greenstar.coop/wp-content/uploads/2023/07/NCG_Dennis_Becker_Classic_Caesar_Salad_715_x_477.jpg" alt="Recipe 2">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Chicken Caesar Salad</h2>
+                <p class="recipe-description">Crispy romaine lettuce with grilled chicken, croutons, and Caesar dressing.</p>
+            </div>
+        </div>
+        
+
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg" alt="Recipe 3">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Chocolate Chip Cookies</h2>
+                <p class="recipe-description">Delicious, chewy cookies loaded with chocolate chips.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://whatsgabycooking.com/wp-content/uploads/2023/01/Master.jpg" alt="Recipe 4">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Avocado Toast</h2>
+                <p class="recipe-description">A simple and healthy toast topped with creamy avocado.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 3 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg" alt="Recipe 3">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Chocolate Chip Cookies</h2>
+                <p class="recipe-description">Delicious, chewy cookies loaded with chocolate chips.</p>
+            </div>
+        </div>
+        
+        <!-- Recipe Card 4 -->
+        <div class="recipe-card" onclick="window.location.href='#'">
+            <img src="https://whatsgabycooking.com/wp-content/uploads/2023/01/Master.jpg" alt="Recipe 4">
+            <div class="recipe-content">
+                <h2 class="recipe-title">Avocado Toast</h2>
+                <p class="recipe-description">A simple and healthy toast topped with creamy avocado.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
